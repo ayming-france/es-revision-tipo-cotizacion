@@ -721,6 +721,11 @@
          deborder la diapositive a 1280px. */
       .slide[data-chapter="ayming-share"] .sphere-visual { display: flex; align-items: center; justify-content: center; }
       .slide[data-chapter="ayming-share"] .sphere-visual img { width: 100%; height: auto; border-radius: var(--radius-14); box-shadow: 0 12px 30px rgba(var(--blue-dark-rgb), .14); }
+      /* Le bandeau de certifications vivait dans le head du deck Alstom, pas dans la
+         slide. Sans ces trois regles les logos AFNOR sortent a leur taille native. */
+      .slide[data-chapter="ayming-share"] .cert-band { display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 1200px; margin: var(--space-22) auto 0; padding-top: var(--space-16); border-top: 1px solid #eef4f8; }
+      .slide[data-chapter="ayming-share"] .cert-band img { height: 54px; width: auto; }
+      .slide[data-chapter="ayming-share"] .cert-band .cb-txt { font-size: var(--font-12); color: #6b7d8a; max-width: 330px; text-align: left; line-height: var(--leading-normal); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title">Ayming&nbsp;Share, su espacio de trabajo seguro</h1>
@@ -950,6 +955,10 @@
     .slide[data-chapter="processus"] .pl-grouphead span { font-weight: var(--weight-bold); text-transform: none; letter-spacing: 0; color: var(--ay-gray); }
     .slide[data-chapter="processus"] .pl-cards { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); margin-top: var(--space-14); }
     .slide[data-chapter="processus"] .pl-cards.one { grid-template-columns: 1fr; }
+    /* Les deux groupes sont deux grilles distinctes : sans cela la carte de la phase B
+       s arrete plus haut que les deux autres. */
+    .slide[data-chapter="processus"] .pl-groups > div { display: flex; flex-direction: column; }
+    .slide[data-chapter="processus"] .pl-cards { flex: 1; }
     .slide[data-chapter="processus"] .pl-card { background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); padding: var(--space-18) var(--space-20) var(--space-16); text-align: left; box-shadow: 0 5px 18px rgba(var(--blue-dark-rgb), .06); display: flex; flex-direction: column; }
     .slide[data-chapter="processus"] .pl-card h4 { font-size: var(--font-15); color: var(--ay-dark); margin: 0; line-height: 1.25; }
     .slide[data-chapter="processus"] .pl-dur { font-size: var(--font-12); font-weight: var(--weight-bold); color: var(--ay-primary); margin-top: var(--space-4); }
