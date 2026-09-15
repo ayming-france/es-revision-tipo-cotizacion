@@ -23,7 +23,7 @@
 
     /* Cartes d'options sans image. Le moteur donne au .column-card son poids visuel par sa
        .card-image ; sans elle la carte arrive sans cadre et flotte dans le vide. */
-    .slide[data-chapter="options"] .column-card { text-align: left; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: var(--radius-14); padding: var(--space-20) var(--space-22) var(--space-22); box-shadow: 0 4px 16px rgba(0, 61, 109, .07); }
+    .slide[data-chapter="options"] .column-card { text-align: left; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: var(--radius-14); padding: var(--space-20) var(--space-22) var(--space-22); box-shadow: 0 4px 16px rgba(var(--blue-dark-rgb), .07); }
     .slide[data-chapter="options"] .column-card h3 { color: var(--ay-dark); margin: var(--space-10) 0 var(--space-8); line-height: 1.25; }
     .slide[data-chapter="options"] .column-card p { line-height: 1.55; }
 
@@ -119,7 +119,7 @@
        veille-net-entreprises : deux échéances réglementaires en vis-à-vis, puis un bandeau
        qui porte la nuance honnête. */
     .slide[data-chapter="ahora"] .ahora-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-26); width: 100%; max-width: 1060px; margin: var(--space-4) auto 0; }
-    .slide[data-chapter="ahora"] .ahora-card { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-26) var(--space-26); text-align: left; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
+    .slide[data-chapter="ahora"] .ahora-card { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-26) var(--space-26); text-align: left; box-shadow: 0 4px 16px rgba(var(--blue-dark-rgb), .07); }
     .slide[data-chapter="ahora"] .ahora-card.next { border-top: 5px solid var(--ay-primary); }
     .slide[data-chapter="ahora"] .ahora-card.now { border-top: 5px solid var(--ay-dark); }
     .slide[data-chapter="ahora"] .ahora-tag { display: inline-block; font-size: var(--font-11); font-weight: var(--weight-black); text-transform: uppercase; letter-spacing: 1.2px; padding: 5px 13px; border-radius: var(--radius-2xl); margin-bottom: var(--space-14); }
@@ -211,7 +211,7 @@
     .slide[data-chapter="balanza"] .bal-center .bal-sub { font-size: 12.5px; color: var(--ay-gray); margin-top: var(--space-4); }
     .slide[data-chapter="balanza"] .bal-stem { width: 2px; height: 26px; background: #d6dee6; margin: var(--space-10) auto 0; }
     .slide[data-chapter="balanza"] .bal-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-26); margin-top: var(--space-18); }
-    .slide[data-chapter="balanza"] .bal-arm { border-radius: var(--radius-xl); padding: var(--space-22) var(--space-24) var(--space-24); text-align: left; border: 1px solid #e5e7eb; background: #fff; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
+    .slide[data-chapter="balanza"] .bal-arm { border-radius: var(--radius-xl); padding: var(--space-22) var(--space-24) var(--space-24); text-align: left; border: 1px solid #e5e7eb; background: #fff; box-shadow: 0 4px 16px rgba(var(--blue-dark-rgb), .07); }
     .slide[data-chapter="balanza"] .bal-arm.down { border-top: 5px solid var(--ay-success); }
     .slide[data-chapter="balanza"] .bal-arm.up { border-top: 5px solid var(--ay-dark); }
     .slide[data-chapter="balanza"] .bal-dir { display: flex; align-items: center; gap: var(--space-9); font-size: 11.5px; font-weight: var(--weight-black); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: var(--space-12); }
@@ -365,7 +365,7 @@
          histoire de strategie, pas un inventaire. Les chiffres du groupe restent
          sur la diapositive "Lider europeo" (implantation), pas ici. */
       .slide[data-chapter="hr-intl-modelo"] .modelo-flow { display: flex; align-items: stretch; gap: 0; width: 100%; max-width: 1160px; margin-top: var(--space-10); }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step { flex: 1; background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-22) var(--space-20); box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step { flex: 1; background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-22) var(--space-20); box-shadow: 0 6px 24px rgba(var(--blue-dark-rgb), .06); text-align: left; }
       .slide[data-chapter="hr-intl-modelo"] .modelo-num { width: 32px; height: 32px; border-radius: var(--radius-circle); color: #fff; font-size: var(--font-14); font-weight: var(--weight-bold); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-14); }
       .slide[data-chapter="hr-intl-modelo"] .modelo-step.s1 .modelo-num { background: var(--blue-primary); }
       .slide[data-chapter="hr-intl-modelo"] .modelo-step.s2 .modelo-num { background: var(--gradient-green-end); }
@@ -375,10 +375,11 @@
       .slide[data-chapter="hr-intl-modelo"] .modelo-chevron { flex: 0 0 40px; display: flex; align-items: center; justify-content: center; }
       .slide[data-chapter="hr-intl-modelo"] .modelo-chevron svg { width: 24px; height: 24px; color: var(--blue-primary); }
       .slide[data-chapter="hr-intl-modelo"] .modelo-close { margin: var(--space-22) auto 0; max-width: 1160px; background: #f7fbfd; border-radius: var(--radius-lg); padding: var(--space-16) var(--space-24); text-align: center; font-size: var(--font-16); font-weight: var(--weight-semibold); color: var(--blue-dark); }
+      .slide[data-chapter="hr-intl-modelo"] .lead-compact { font-size: var(--font-14); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title">Una respuesta global, una producción local</h1>
-      <p class="content-paragraph" style="font-size:14px">Ayming International HR centraliza la práctica de costes sociales para movilizar a los mejores especialistas en cada misión, y produce el servicio en el país.</p>
+      <p class="content-paragraph lead-compact">Ayming International HR centraliza la práctica de costes sociales para movilizar a los mejores especialistas en cada misión, y produce el servicio en el país.</p>
       <div class="modelo-flow">
         <div class="modelo-step s1">
           <div class="modelo-num">1</div>
@@ -411,7 +412,7 @@
          se deplace sur .pruebas-body qui porte tout le texte. Le badge d'icone rond est
          retire sur les 3 cartes : redondant a cote d'une photo, la puce de pratique
          suffit a categoriser. */
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card { background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card { background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 6px 24px rgba(var(--blue-dark-rgb), .06); text-align: left; }
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-banner { display: block; width: 100%; height: 230px; object-fit: cover; }
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-body { padding: var(--space-12) var(--space-18) var(--space-12); }
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-card h3 { font-size: var(--font-15); color: var(--blue-dark); font-weight: var(--weight-bold); margin: 0 0 var(--space-6); line-height: 1.25; }
@@ -422,10 +423,11 @@
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-chip { display: inline-block; background: #e9f5fc; color: var(--blue-primary);
         font-size: 10.5px; font-weight: var(--weight-bold); letter-spacing: .06em; text-transform: uppercase;
         padding: 3px var(--space-10); border-radius: 999px; margin-bottom: var(--space-8); }
+      .slide[data-chapter="hr-intl-pruebas"] .lead-compact { font-size: var(--font-14); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title">Nuestra estrategia en marcha, tres ejemplos</h1>
-      <p class="content-paragraph" style="font-size:14px">No solo esta oferta funciona así: tres ejemplos del grupo, en servicios gestionados, software y consultoría.</p>
+      <p class="content-paragraph lead-compact">No solo esta oferta funciona así: tres ejemplos del grupo, en servicios gestionados, software y consultoría.</p>
       <div class="pruebas-grid">
         <div class="pruebas-card p1">
           <img class="pruebas-banner" src="https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/pruebas-at-declaracion.jpg" alt="Declaración de un incidente desde el móvil">
@@ -457,10 +459,13 @@
   </section>
 
 <section class="slide" data-chapter="hr-intl-espana">
+    <style>
+      .slide[data-chapter="hr-intl-espana"] .slide-title { text-align: left; font-size: 32px; }
+    </style>
     <div class="slide-inner">
       <div class="ancrage-layout">
         <div class="ancrage-text">
-          <h1 class="slide-title" style="text-align: left; font-size:32px">Beneficiarse de la cercanía y la experiencia local necesaria...</h1>
+          <h1 class="slide-title">Beneficiarse de la cercanía y la experiencia local necesaria...</h1>
           <p>Nuestros equipos acompañan a nuestros clientes en su día a día apoyándose en un <strong>ecosistema de profesionales</strong> en todo el país: despachos de abogados independientes especializados en seguridad social, graduados sociales, expertos contables y médicos independientes, con presencia en Madrid, Barcelona y Valencia.</p>
         </div>
         <div class="ancrage-map">
@@ -487,9 +492,10 @@
       .slide[data-chapter="implantation"] .impl-stat:last-child { border-right: none; }
       .slide[data-chapter="implantation"] .impl-stat-num { font-size: 22px; font-weight: var(--weight-bold); color: var(--ay-primary); line-height: var(--leading-tight); white-space: nowrap; }
       .slide[data-chapter="implantation"] .impl-stat-label { font-size: var(--font-11); font-weight: var(--weight-semibold); color: var(--ay-gray); text-transform: uppercase; letter-spacing: .3px; margin-top: var(--space-6); }
+      .slide[data-chapter="implantation"] .slide-title { font-size: 26px; }
     </style>
     <div class="slide-inner">
-      <h1 class="slide-title" style="font-size:26px">... con la fuerza de todo el equipo Ayming&nbsp;International&nbsp;HR, líder europeo en costes sociales</h1>
+      <h1 class="slide-title">... con la fuerza de todo el equipo Ayming&nbsp;International&nbsp;HR, líder europeo en costes sociales</h1>
       <div class="implantation-container">
         <img src="https://ayming-france.github.io/assets/maps/eu-map-es.svg" alt="Europa" class="implantation-eu">
       </div>
@@ -695,7 +701,10 @@
 </section>
 
 <!-- SLIDE: OPTIONS / ADD-ONS -->
-<section class="slide" data-chapter="options" style="background: var(--bg-light);">
+<section class="slide options-slide" data-chapter="options">
+  <style>
+    .options-slide { background: var(--bg-light); }
+  </style>
   <div class="slide-inner">
     <h1 class="slide-title">
       Otros perímetros posibles
