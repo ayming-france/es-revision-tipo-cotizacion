@@ -19,17 +19,17 @@
 
     /* Mention légale en pied d'un value detail, rôle que le gabarit ne prévoit pas et que
        le moteur ne style pas. Porte la formule obligatoire sur les avocats. */
-    .value-detail-content .value-detail-source { font-size: 12px; line-height: 1.55; color: var(--ay-light); margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--ay-bg-subtle); }
+    .value-detail-content .value-detail-source { font-size: var(--font-12); line-height: 1.55; color: var(--ay-light); margin-top: var(--space-18); padding-top: var(--space-12); border-top: 1px solid var(--ay-bg-subtle); }
 
     /* Cartes d'options sans image. Le moteur donne au .column-card son poids visuel par sa
        .card-image ; sans elle la carte arrive sans cadre et flotte dans le vide. */
-    .slide[data-chapter="options"] .column-card { text-align: left; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: 14px; padding: 20px 22px 22px; box-shadow: 0 4px 16px rgba(0, 61, 109, .07); }
-    .slide[data-chapter="options"] .column-card h3 { color: var(--ay-dark); margin: 10px 0 8px; line-height: 1.25; }
+    .slide[data-chapter="options"] .column-card { text-align: left; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: var(--radius-14); padding: var(--space-20) var(--space-22) var(--space-22); box-shadow: 0 4px 16px rgba(0, 61, 109, .07); }
+    .slide[data-chapter="options"] .column-card h3 { color: var(--ay-dark); margin: var(--space-10) 0 var(--space-8); line-height: 1.25; }
     .slide[data-chapter="options"] .column-card p { line-height: 1.55; }
 
     /* Phrase de conclusion sous une grille, rôle que le moteur ne style pas. */
-    .slide-inner .slide-note { font-size: 14px; line-height: 1.6; color: var(--ay-text); max-width: 1000px; margin: 0 auto 22px; }
-    .slide-inner .slide-note b { color: var(--ay-dark); font-weight: 700; }
+    .slide-inner .slide-note { font-size: var(--font-14); line-height: var(--leading-relaxed); color: var(--ay-text); max-width: 1000px; margin: 0 auto var(--space-22); }
+    .slide-inner .slide-note b { color: var(--ay-dark); font-weight: var(--weight-bold); }
   </style>
 </head>
 <body data-audience="client" data-no-partners>
@@ -118,19 +118,19 @@
     /* Slide sur mesure insérée après l'insight, sur le modèle de la slide reforme du deck
        veille-net-entreprises : deux échéances réglementaires en vis-à-vis, puis un bandeau
        qui porte la nuance honnête. */
-    .slide[data-chapter="ahora"] .ahora-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; width: 100%; max-width: 1060px; margin: 4px auto 0; }
-    .slide[data-chapter="ahora"] .ahora-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 24px 26px 26px; text-align: left; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
+    .slide[data-chapter="ahora"] .ahora-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-26); width: 100%; max-width: 1060px; margin: var(--space-4) auto 0; }
+    .slide[data-chapter="ahora"] .ahora-card { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-26) var(--space-26); text-align: left; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
     .slide[data-chapter="ahora"] .ahora-card.next { border-top: 5px solid var(--ay-primary); }
     .slide[data-chapter="ahora"] .ahora-card.now { border-top: 5px solid var(--ay-dark); }
-    .slide[data-chapter="ahora"] .ahora-tag { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; padding: 5px 13px; border-radius: 20px; margin-bottom: 14px; }
+    .slide[data-chapter="ahora"] .ahora-tag { display: inline-block; font-size: var(--font-11); font-weight: var(--weight-black); text-transform: uppercase; letter-spacing: 1.2px; padding: 5px 13px; border-radius: var(--radius-2xl); margin-bottom: var(--space-14); }
     .slide[data-chapter="ahora"] .ahora-card.next .ahora-tag { background: #eaf6fd; color: var(--ay-dark); }
     .slide[data-chapter="ahora"] .ahora-card.now .ahora-tag { background: var(--ay-bg-subtle); color: var(--ay-gray); }
-    .slide[data-chapter="ahora"] .ahora-date { font-size: 27px; font-weight: 800; color: var(--ay-dark); line-height: 1.15; }
-    .slide[data-chapter="ahora"] .ahora-body { font-size: 14px; color: var(--ay-text); line-height: 1.55; margin-top: 12px; }
-    .slide[data-chapter="ahora"] .ahora-body b { color: var(--ay-dark); font-weight: 700; }
-    .slide[data-chapter="ahora"] .ahora-src { font-size: 11.5px; color: var(--ay-light); margin-top: 14px; padding-top: 10px; border-top: 1px solid #eef2f6; }
-    .slide[data-chapter="ahora"] .ahora-banner { max-width: 1060px; margin: 22px auto 0; border: 1.5px dashed var(--ay-primary); border-radius: 12px; background: #f7fcff; padding: 14px 22px; font-size: 13.5px; line-height: 1.55; color: var(--ay-text); text-align: left; }
-    .slide[data-chapter="ahora"] .ahora-banner b { color: var(--ay-dark); font-weight: 800; }
+    .slide[data-chapter="ahora"] .ahora-date { font-size: 27px; font-weight: var(--weight-black); color: var(--ay-dark); line-height: 1.15; }
+    .slide[data-chapter="ahora"] .ahora-body { font-size: var(--font-14); color: var(--ay-text); line-height: 1.55; margin-top: var(--space-12); }
+    .slide[data-chapter="ahora"] .ahora-body b { color: var(--ay-dark); font-weight: var(--weight-bold); }
+    .slide[data-chapter="ahora"] .ahora-src { font-size: 11.5px; color: var(--ay-light); margin-top: var(--space-14); padding-top: var(--space-10); border-top: 1px solid #eef2f6; }
+    .slide[data-chapter="ahora"] .ahora-banner { max-width: 1060px; margin: var(--space-22) auto 0; border: 1.5px dashed var(--ay-primary); border-radius: var(--radius-lg); background: #f7fcff; padding: var(--space-14) var(--space-22); font-size: 13.5px; line-height: 1.55; color: var(--ay-text); text-align: left; }
+    .slide[data-chapter="ahora"] .ahora-banner b { color: var(--ay-dark); font-weight: var(--weight-black); }
   </style>
   <div class="slide-inner">
     <h1 class="slide-title">Por qué ahora</h1>
@@ -204,27 +204,27 @@
        des 18 decks). Elle porte le differentiateur du deck : la même lecture de la tarifa
        fait descendre un taux ou monter un autre. Pas de rouge ni d'ambre, la sévérité se
        dit en bleu profond contre vert de marque (DESIGN.md). */
-    .slide[data-chapter="balanza"] .bal { width: 100%; max-width: 1080px; margin: 6px auto 0; }
-    .slide[data-chapter="balanza"] .bal-center { text-align: center; margin-bottom: 8px; }
-    .slide[data-chapter="balanza"] .bal-center .bal-rate { font-size: 46px; font-weight: 800; color: var(--ay-dark); line-height: 1; }
-    .slide[data-chapter="balanza"] .bal-center .bal-label { font-size: 15px; font-weight: 700; color: var(--ay-text); margin-top: 8px; }
-    .slide[data-chapter="balanza"] .bal-center .bal-sub { font-size: 12.5px; color: var(--ay-gray); margin-top: 4px; }
-    .slide[data-chapter="balanza"] .bal-stem { width: 2px; height: 26px; background: #d6dee6; margin: 10px auto 0; }
-    .slide[data-chapter="balanza"] .bal-split { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 18px; }
-    .slide[data-chapter="balanza"] .bal-arm { border-radius: 16px; padding: 22px 24px 24px; text-align: left; border: 1px solid #e5e7eb; background: #fff; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
+    .slide[data-chapter="balanza"] .bal { width: 100%; max-width: 1080px; margin: var(--space-6) auto 0; }
+    .slide[data-chapter="balanza"] .bal-center { text-align: center; margin-bottom: var(--space-8); }
+    .slide[data-chapter="balanza"] .bal-center .bal-rate { font-size: 46px; font-weight: var(--weight-black); color: var(--ay-dark); line-height: var(--leading-tight); }
+    .slide[data-chapter="balanza"] .bal-center .bal-label { font-size: var(--font-15); font-weight: var(--weight-bold); color: var(--ay-text); margin-top: var(--space-8); }
+    .slide[data-chapter="balanza"] .bal-center .bal-sub { font-size: 12.5px; color: var(--ay-gray); margin-top: var(--space-4); }
+    .slide[data-chapter="balanza"] .bal-stem { width: 2px; height: 26px; background: #d6dee6; margin: var(--space-10) auto 0; }
+    .slide[data-chapter="balanza"] .bal-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-26); margin-top: var(--space-18); }
+    .slide[data-chapter="balanza"] .bal-arm { border-radius: var(--radius-xl); padding: var(--space-22) var(--space-24) var(--space-24); text-align: left; border: 1px solid #e5e7eb; background: #fff; box-shadow: 0 4px 16px rgba(0,61,109,.07); }
     .slide[data-chapter="balanza"] .bal-arm.down { border-top: 5px solid var(--ay-success); }
     .slide[data-chapter="balanza"] .bal-arm.up { border-top: 5px solid var(--ay-dark); }
-    .slide[data-chapter="balanza"] .bal-dir { display: flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 12px; }
+    .slide[data-chapter="balanza"] .bal-dir { display: flex; align-items: center; gap: var(--space-9); font-size: 11.5px; font-weight: var(--weight-black); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: var(--space-12); }
     .slide[data-chapter="balanza"] .bal-arm.down .bal-dir { color: var(--ay-success); }
     .slide[data-chapter="balanza"] .bal-arm.up .bal-dir { color: var(--ay-dark); }
     .slide[data-chapter="balanza"] .bal-dir svg { width: 17px; height: 17px; }
-    .slide[data-chapter="balanza"] .bal-arm .bal-rate { font-size: 38px; font-weight: 800; line-height: 1; color: var(--ay-dark); }
-    .slide[data-chapter="balanza"] .bal-role { font-size: 14.5px; font-weight: 700; color: var(--ay-text); margin-top: 10px; line-height: 1.35; }
-    .slide[data-chapter="balanza"] .bal-body { font-size: 13px; color: var(--ay-gray); line-height: 1.5; margin-top: 8px; }
-    .slide[data-chapter="balanza"] .bal-case { font-size: 12px; color: var(--ay-light); margin-top: 12px; padding-top: 10px; border-top: 1px solid #eef2f6; }
+    .slide[data-chapter="balanza"] .bal-arm .bal-rate { font-size: 38px; font-weight: var(--weight-black); line-height: var(--leading-tight); color: var(--ay-dark); }
+    .slide[data-chapter="balanza"] .bal-role { font-size: 14.5px; font-weight: var(--weight-bold); color: var(--ay-text); margin-top: var(--space-10); line-height: 1.35; }
+    .slide[data-chapter="balanza"] .bal-body { font-size: var(--font-13); color: var(--ay-gray); line-height: var(--leading-normal); margin-top: var(--space-8); }
+    .slide[data-chapter="balanza"] .bal-case { font-size: var(--font-12); color: var(--ay-light); margin-top: var(--space-12); padding-top: var(--space-10); border-top: 1px solid #eef2f6; }
     .slide[data-chapter="balanza"] .bal-case b { color: var(--ay-gray); }
-    .slide[data-chapter="balanza"] .bal-close { font-size: 15px; line-height: 1.55; color: var(--ay-text); max-width: 900px; margin: 24px auto 0; text-align: center; }
-    .slide[data-chapter="balanza"] .bal-close b { color: var(--ay-dark); font-weight: 800; }
+    .slide[data-chapter="balanza"] .bal-close { font-size: var(--font-15); line-height: 1.55; color: var(--ay-text); max-width: 900px; margin: var(--space-24) auto 0; text-align: center; }
+    .slide[data-chapter="balanza"] .bal-close b { color: var(--ay-dark); font-weight: var(--weight-black); }
   </style>
   <div class="slide-inner">
     <h1 class="slide-title">Declarar bien y pagar lo que corresponde</h1>
@@ -364,17 +364,17 @@
          (pastille de chiffres + deux cartes a puces) : l'utilisateur veut une
          histoire de strategie, pas un inventaire. Les chiffres du groupe restent
          sur la diapositive "Lider europeo" (implantation), pas ici. */
-      .slide[data-chapter="hr-intl-modelo"] .modelo-flow { display: flex; align-items: stretch; gap: 0; width: 100%; max-width: 1160px; margin-top: 10px; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step { flex: 1; background: #fff; border: 1px solid #e9f0f5; border-radius: 16px; padding: 24px 22px 20px; box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-num { width: 32px; height: 32px; border-radius: 50%; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s1 .modelo-num { background: #11a9e6; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s2 .modelo-num { background: #0ab38c; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s3 .modelo-num { background: #00456d; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step h3 { font-size: 16px; color: #00456d; font-weight: 700; margin: 0 0 10px; line-height: 1.25; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-step p { font-size: 13px; color: #4a5b68; line-height: 1.55; margin: 0; }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-flow { display: flex; align-items: stretch; gap: 0; width: 100%; max-width: 1160px; margin-top: var(--space-10); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step { flex: 1; background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); padding: var(--space-24) var(--space-22) var(--space-20); box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-num { width: 32px; height: 32px; border-radius: var(--radius-circle); color: #fff; font-size: var(--font-14); font-weight: var(--weight-bold); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-14); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s1 .modelo-num { background: var(--blue-primary); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s2 .modelo-num { background: var(--gradient-green-end); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step.s3 .modelo-num { background: var(--blue-dark); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step h3 { font-size: var(--font-16); color: var(--blue-dark); font-weight: var(--weight-bold); margin: 0 0 var(--space-10); line-height: 1.25; }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-step p { font-size: var(--font-13); color: #4a5b68; line-height: 1.55; margin: 0; }
       .slide[data-chapter="hr-intl-modelo"] .modelo-chevron { flex: 0 0 40px; display: flex; align-items: center; justify-content: center; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-chevron svg { width: 24px; height: 24px; color: #11a9e6; }
-      .slide[data-chapter="hr-intl-modelo"] .modelo-close { margin: 22px auto 0; max-width: 1160px; background: #f7fbfd; border-radius: 12px; padding: 16px 24px; text-align: center; font-size: 16px; font-weight: 600; color: #00456d; }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-chevron svg { width: 24px; height: 24px; color: var(--blue-primary); }
+      .slide[data-chapter="hr-intl-modelo"] .modelo-close { margin: var(--space-22) auto 0; max-width: 1160px; background: #f7fbfd; border-radius: var(--radius-lg); padding: var(--space-16) var(--space-24); text-align: center; font-size: var(--font-16); font-weight: var(--weight-semibold); color: var(--blue-dark); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title">Una respuesta global, una producción local</h1>
@@ -405,23 +405,23 @@
 
 <section class="slide" data-chapter="hr-intl-pruebas">
     <style>
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; width: 100%; max-width: 1160px; margin-top: 8px; }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-26); width: 100%; max-width: 1160px; margin-top: var(--space-8); }
       /* Carte image + texte : la photo est en plein bord (overflow:hidden sur la carte
          fait office de masque pour les coins arrondis du haut), le padding d'origine
          se deplace sur .pruebas-body qui porte tout le texte. Le badge d'icone rond est
          retire sur les 3 cartes : redondant a cote d'une photo, la puce de pratique
          suffit a categoriser. */
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card { background: #fff; border: 1px solid #e9f0f5; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card { background: #fff; border: 1px solid #e9f0f5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 6px 24px rgba(0,69,109,.06); text-align: left; }
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-banner { display: block; width: 100%; height: 230px; object-fit: cover; }
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-body { padding: 12px 18px 12px; }
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card h3 { font-size: 15px; color: #00456d; font-weight: 700; margin: 0 0 6px; line-height: 1.25; }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-body { padding: var(--space-12) var(--space-18) var(--space-12); }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-card h3 { font-size: var(--font-15); color: var(--blue-dark); font-weight: var(--weight-bold); margin: 0 0 var(--space-6); line-height: 1.25; }
       .slide[data-chapter="hr-intl-pruebas"] .pruebas-card p { font-size: 12.5px; color: #4a5b68; line-height: 1.45; margin: 0; }
       /* Puce de pratique, meme couple couleurs que les badges d'icone de la maquette
-         (fond #e9f5fc / texte #11a9e6), en version pastille pour rester lisible a
+         (fond #e9f5fc / texte var(--blue-primary)), en version pastille pour rester lisible a
          cote d'un titre de carte. */
-      .slide[data-chapter="hr-intl-pruebas"] .pruebas-chip { display: inline-block; background: #e9f5fc; color: #11a9e6;
-        font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-        padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
+      .slide[data-chapter="hr-intl-pruebas"] .pruebas-chip { display: inline-block; background: #e9f5fc; color: var(--blue-primary);
+        font-size: 10.5px; font-weight: var(--weight-bold); letter-spacing: .06em; text-transform: uppercase;
+        padding: 3px var(--space-10); border-radius: 999px; margin-bottom: var(--space-8); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title">Nuestra estrategia en marcha, tres ejemplos</h1>
@@ -482,11 +482,11 @@
         align-items: flex-start; margin: 2px auto 0; }
       .slide[data-chapter="implantation"] .implantation-eu { height: 575px; max-height: none; width: auto;
         transform: translateY(-122px); }
-      .slide[data-chapter="implantation"] .impl-stats { display: flex; justify-content: center; gap: 0; width: 100%; max-width: 900px; margin: 26px auto 0; }
-      .slide[data-chapter="implantation"] .impl-stat { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid #e0e0e0; }
+      .slide[data-chapter="implantation"] .impl-stats { display: flex; justify-content: center; gap: 0; width: 100%; max-width: 900px; margin: var(--space-26) auto 0; }
+      .slide[data-chapter="implantation"] .impl-stat { flex: 1; text-align: center; padding: 0 var(--space-12); border-right: 1px solid #e0e0e0; }
       .slide[data-chapter="implantation"] .impl-stat:last-child { border-right: none; }
-      .slide[data-chapter="implantation"] .impl-stat-num { font-size: 22px; font-weight: 700; color: var(--ay-primary); line-height: 1; white-space: nowrap; }
-      .slide[data-chapter="implantation"] .impl-stat-label { font-size: 11px; font-weight: 600; color: var(--ay-gray); text-transform: uppercase; letter-spacing: .3px; margin-top: 6px; }
+      .slide[data-chapter="implantation"] .impl-stat-num { font-size: 22px; font-weight: var(--weight-bold); color: var(--ay-primary); line-height: var(--leading-tight); white-space: nowrap; }
+      .slide[data-chapter="implantation"] .impl-stat-label { font-size: var(--font-11); font-weight: var(--weight-semibold); color: var(--ay-gray); text-transform: uppercase; letter-spacing: .3px; margin-top: var(--space-6); }
     </style>
     <div class="slide-inner">
       <h1 class="slide-title" style="font-size:26px">... con la fuerza de todo el equipo Ayming&nbsp;International&nbsp;HR, líder europeo en costes sociales</h1>
@@ -736,15 +736,15 @@
     <style>
       .slide[data-chapter="clientes"] .slide-inner { max-width: 1160px; }
       .slide[data-chapter="clientes"] .slide-title { margin-bottom: 48px; }
-      .cl-wrap { display: grid; grid-template-columns: 1.18fr 1px 0.92fr 1px 0.92fr; gap: 0 26px; width: 100%; align-items: stretch; }
+      .cl-wrap { display: grid; grid-template-columns: 1.18fr 1px 0.92fr 1px 0.92fr; gap: 0 var(--space-26); width: 100%; align-items: stretch; }
       .cl-div { width: 1px; background: linear-gradient(180deg, transparent 0%, #d6e0ea 14%, #d6e0ea 86%, transparent 100%); }
       .cl-col { display: flex; flex-direction: column; align-items: center; text-align: center; }
-      .cl-stat { font-size: 40px; font-weight: 800; color: #11a9e6; line-height: 1; letter-spacing: -1px; }
-      .cl-label { font-size: 13px; font-weight: 700; color: #00456d; margin-top: 9px; line-height: 1.3; min-height: 34px; }
-      .cl-cap { font-size: 11.5px; font-style: italic; color: #6b7280; margin-top: 7px; line-height: 1.35; min-height: 34px; padding: 0 6px; }
-      .cl-grid { display: grid; align-items: center; justify-items: center; width: 100%; margin-top: 16px; }
-      .cl-grid.g3 { grid-template-columns: repeat(3, 1fr); gap: 18px 16px; }
-      .cl-grid.g2 { grid-template-columns: repeat(2, 1fr); gap: 26px 20px; }
+      .cl-stat { font-size: 40px; font-weight: var(--weight-black); color: var(--blue-primary); line-height: var(--leading-tight); letter-spacing: -1px; }
+      .cl-label { font-size: var(--font-13); font-weight: var(--weight-bold); color: var(--blue-dark); margin-top: var(--space-9); line-height: var(--leading-snug); min-height: 34px; }
+      .cl-cap { font-size: 11.5px; font-style: italic; color: #6b7280; margin-top: 7px; line-height: 1.35; min-height: 34px; padding: 0 var(--space-6); }
+      .cl-grid { display: grid; align-items: center; justify-items: center; width: 100%; margin-top: var(--space-16); }
+      .cl-grid.g3 { grid-template-columns: repeat(3, 1fr); gap: var(--space-18) var(--space-16); }
+      .cl-grid.g2 { grid-template-columns: repeat(2, 1fr); gap: var(--space-26) var(--space-20); }
       .cl-grid img { max-width: 90%; object-fit: contain; }
       .cl-col-1 .cl-grid img { max-height: 24px; }
       .cl-col-2 .cl-grid img, .cl-col-3 .cl-grid img { max-height: 38px; }
