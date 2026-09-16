@@ -55,9 +55,9 @@
       <div class="nav-item" data-slide="9"><span class="nav-item-number">08</span>Lo que aportamos</div>
       <div class="nav-item" data-slide="15"><span class="nav-item-number">09</span>Ayming Share</div>
       <div class="nav-item" data-slide="16"><span class="nav-item-number">10</span>Cercanía en España</div>
-      <div class="nav-item" data-slide="18"><span class="nav-item-number">11</span>Clientes</div>
-      <div class="nav-item" data-slide="19"><span class="nav-item-number">12</span>Preguntas frecuentes</div>
-      <div class="nav-item" data-slide="20"><span class="nav-item-number">13</span>Cómo se desarrolla</div>
+      <div class="nav-item" data-slide="19"><span class="nav-item-number">11</span>Clientes</div>
+      <div class="nav-item" data-slide="20"><span class="nav-item-number">12</span>Preguntas frecuentes</div>
+      <div class="nav-item" data-slide="21"><span class="nav-item-number">13</span>Cómo se desarrolla</div>
     </div>
   </nav>
 
@@ -813,6 +813,126 @@
         <div class="impl-stat"><div class="impl-stat-num">250M€</div><div class="impl-stat-label">Recuperados para nuestros clientes de RR. HH.</div></div>
         <div class="impl-stat"><div class="impl-stat-num">40</div><div class="impl-stat-label">Años de experiencia</div></div>
         <div class="impl-stat"><div class="impl-stat-num">65M€</div><div class="impl-stat-label">Facturados de costes sociales</div></div>
+      </div>
+    </div>
+    <div class="company-logo"><img src="https://ayming-france.github.io/assets/logos/ayming-logo.png" alt="Ayming"></div>
+  </section>
+
+<section class="slide" data-chapter="cobertura">
+    <style>
+      .slide[data-chapter="cobertura"] .content-paragraph { max-width: 820px; margin: 0 auto; text-align: center; }
+      .slide[data-chapter="cobertura"] .cob-matrix { display: grid; grid-template-columns: 320px repeat(6, 1fr);
+        border: 1px solid var(--ay-bg-subtle); border-radius: var(--radius-xl); overflow: hidden;
+        margin-top: var(--space-26); }
+      .slide[data-chapter="cobertura"] .cob-corner { background: var(--ay-bg-light); display: flex; align-items: flex-end;
+        padding: 0 0 var(--space-16) var(--space-22); }
+      .slide[data-chapter="cobertura"] .cob-corner span { font-size: var(--font-11); font-weight: var(--weight-semibold);
+        letter-spacing: .8px; text-transform: uppercase; color: var(--ay-light); }
+      .slide[data-chapter="cobertura"] .cob-head { background: var(--ay-bg-light); display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: var(--space-6); padding: var(--space-16) var(--space-4);
+        border-left: 1px solid var(--ay-bg-subtle); }
+      .slide[data-chapter="cobertura"] .cob-flag { width: 42px; height: 28px; border-radius: var(--radius-md);
+        overflow: hidden; box-shadow: 0 0 0 1px rgba(var(--blue-dark-rgb), .18); }
+      .slide[data-chapter="cobertura"] .cob-flag svg { display: block; width: 100%; height: 100%; }
+      .slide[data-chapter="cobertura"] .cob-head b { font-size: var(--font-11); font-weight: var(--weight-bold);
+        letter-spacing: .8px; color: var(--ay-dark); }
+      .slide[data-chapter="cobertura"] .cob-head i { font-style: normal; font-size: 10px; color: var(--ay-light); }
+      .slide[data-chapter="cobertura"] .cob-label { display: flex; align-items: center; gap: var(--space-12);
+        padding: 0 var(--space-16) 0 var(--space-22); height: 78px; border-top: 1px solid var(--ay-bg-subtle);
+        text-align: left; }
+      .slide[data-chapter="cobertura"] .cob-ic { width: 34px; height: 34px; border-radius: 50%; flex: 0 0 34px;
+        background: var(--overlay-blue-soft); display: flex; align-items: center; justify-content: center; }
+      .slide[data-chapter="cobertura"] .cob-ic svg { width: 18px; height: 18px; color: var(--ay-primary); stroke-width: 1.8; }
+      .slide[data-chapter="cobertura"] .cob-label strong { font-size: var(--font-15); font-weight: var(--weight-bold);
+        line-height: var(--leading-tight); color: var(--ay-text); }
+      .slide[data-chapter="cobertura"] .cob-cell { height: 78px; border-top: 1px solid var(--ay-bg-subtle);
+        border-left: 1px solid var(--ay-bg-subtle); display: flex; align-items: center; justify-content: center; }
+      .slide[data-chapter="cobertura"] .cob-cell.on { background: rgba(var(--blue-primary-rgb), .05); }
+      .slide[data-chapter="cobertura"] .cob-dot { width: 26px; height: 26px; border-radius: 50%;
+        background: var(--gradient-brand-horizontal); display: flex; align-items: center; justify-content: center; }
+      .slide[data-chapter="cobertura"] .cob-dot svg { width: 13px; height: 13px; color: var(--bg-white); stroke-width: 3; }
+      .slide[data-chapter="cobertura"] .cob-none { width: 14px; height: 2px; border-radius: 2px; background: var(--ay-bg-subtle); }
+      .slide[data-chapter="cobertura"] .cob-legend { display: flex; align-items: center; justify-content: center;
+        gap: var(--space-26); margin-top: var(--space-18); font-size: var(--font-12); color: var(--ay-gray); }
+      .slide[data-chapter="cobertura"] .cob-legend span { display: flex; align-items: center; gap: var(--space-8); }
+      .slide[data-chapter="cobertura"] .cob-legend .cob-dot { width: 18px; height: 18px; }
+      .slide[data-chapter="cobertura"] .cob-legend .cob-dot svg { width: 9px; height: 9px; }
+    </style>
+    <div class="slide-inner">
+      <h1 class="slide-title">Nuestros servicios de RR.&nbsp;HH., país por país</h1>
+      <p class="content-paragraph">Cinco especialidades de RR.&nbsp;HH. en seis países europeos. Francia cubre toda la gama, y cada país cuenta con un equipo local que domina su normativa y su administración.</p>
+
+      <div class="cob-matrix">
+        <div class="cob-corner"><span>Especialidad RR. HH.</span></div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="1" height="2" x="0" fill="#0055A4"></rect><rect width="1" height="2" x="1" fill="#ffffff"></rect><rect width="1" height="2" x="2" fill="#EF4135"></rect></svg></span>
+          <b>FRANCIA</b><i>5 servicios</i>
+        </div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="3" height="0.5" y="0" fill="#AA151B"></rect><rect width="3" height="1" y="0.5" fill="#F1BF00"></rect><rect width="3" height="0.5" y="1.5" fill="#AA151B"></rect></svg></span>
+          <b>ESPAÑA</b><i>3 servicios</i>
+        </div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="3" height="2" fill="#FF0000"></rect><rect width="1.2" height="2" fill="#006600"></rect><circle cx="1.2" cy="1" r="0.36" fill="#FFD700" stroke="#ffffff" stroke-width="0.06"></circle></svg></span>
+          <b>PORTUGAL</b><i>2 servicios</i>
+        </div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="3" height="0.667" y="0" fill="#1a1a1a"></rect><rect width="3" height="0.667" y="0.667" fill="#DD0000"></rect><rect width="3" height="0.666" y="1.334" fill="#FFCE00"></rect></svg></span>
+          <b>ALEMANIA</b><i>2 servicios</i>
+        </div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="1" height="2" x="0" fill="#009246"></rect><rect width="1" height="2" x="1" fill="#ffffff"></rect><rect width="1" height="2" x="2" fill="#CE2B37"></rect></svg></span>
+          <b>ITALIA</b><i>2 servicios</i>
+        </div>
+        <div class="cob-head">
+          <span class="cob-flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="1" height="2" x="0" fill="#1a1a1a"></rect><rect width="1" height="2" x="1" fill="#FDDA24"></rect><rect width="1" height="2" x="2" fill="#EF3340"></rect></svg></span>
+          <b>BÉLGICA</b><i>1 servicio</i>
+        </div>
+
+        <div class="cob-label"><span class="cob-ic"><i data-lucide="shield-alert"></i></span><strong>Prevención de riesgos</strong></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+
+        <div class="cob-label"><span class="cob-ic"><i data-lucide="hard-hat"></i></span><strong>Accidentes de trabajo y enfermedades profesionales</strong></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+
+        <div class="cob-label"><span class="cob-ic"><i data-lucide="euro"></i></span><strong>Costes y cotizaciones de RR.&nbsp;HH.</strong></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+
+        <div class="cob-label"><span class="cob-ic"><i data-lucide="landmark"></i></span><strong>Ayudas y subvenciones de RR.&nbsp;HH.</strong></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+
+        <div class="cob-label"><span class="cob-ic"><i data-lucide="calendar-clock"></i></span><strong>Bajas laborales</strong></div>
+        <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-none"></span></div>
+      </div>
+
+      <div class="cob-legend">
+        <span><span class="cob-dot"><i data-lucide="check"></i></span> Servicio prestado por un equipo local</span>
+        <span><span class="cob-none"></span> Sin actividad en este país por el momento</span>
       </div>
     </div>
     <div class="company-logo"><img src="https://ayming-france.github.io/assets/logos/ayming-logo.png" alt="Ayming"></div>
