@@ -820,8 +820,11 @@
 
 <section class="slide" data-chapter="cobertura">
     <style>
-      .slide[data-chapter="cobertura"] .content-paragraph { max-width: 820px; margin: 0 auto; text-align: center; }
-      .slide[data-chapter="cobertura"] .cob-matrix { display: grid; grid-template-columns: 320px repeat(6, 1fr);
+      /* .slide-inner est une colonne flex centree : sans width 100% la grille se reduit a
+         son contenu et la slide parait etriquee. On elargit aussi le cadre pour ce chapitre. */
+      .slide[data-chapter="cobertura"] .slide-inner { max-width: 1340px; }
+      .slide[data-chapter="cobertura"] .content-paragraph { max-width: 880px; margin: 0 auto; text-align: center; }
+      .slide[data-chapter="cobertura"] .cob-matrix { width: 100%; display: grid; grid-template-columns: 360px repeat(6, 1fr);
         border: 1px solid var(--ay-bg-subtle); border-radius: var(--radius-xl); overflow: hidden;
         margin-top: var(--space-26); }
       .slide[data-chapter="cobertura"] .cob-corner { background: var(--ay-bg-light); display: flex; align-items: flex-end;
