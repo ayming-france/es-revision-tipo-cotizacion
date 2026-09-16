@@ -855,10 +855,13 @@
         background: var(--gradient-brand-horizontal); display: flex; align-items: center; justify-content: center; }
       .slide[data-chapter="cobertura"] .cob-dot svg { width: 13px; height: 13px; color: var(--bg-white); stroke-width: 3; }
       .slide[data-chapter="cobertura"] .cob-none { width: 14px; height: 2px; border-radius: 2px; background: var(--ay-bg-subtle); }
+      .slide[data-chapter="cobertura"] .cob-soon { width: 26px; height: 26px; border-radius: 50%;
+        border: 2px solid rgba(var(--blue-primary-rgb), .35); background: var(--bg-white); }
       .slide[data-chapter="cobertura"] .cob-legend { display: flex; align-items: center; justify-content: center;
         gap: var(--space-26); margin-top: var(--space-18); font-size: var(--font-12); color: var(--ay-gray); }
       .slide[data-chapter="cobertura"] .cob-legend span { display: flex; align-items: center; gap: var(--space-8); }
-      .slide[data-chapter="cobertura"] .cob-legend .cob-dot { width: 18px; height: 18px; }
+      .slide[data-chapter="cobertura"] .cob-legend .cob-dot,
+      .slide[data-chapter="cobertura"] .cob-legend .cob-soon { width: 18px; height: 18px; border-width: 2px; }
       .slide[data-chapter="cobertura"] .cob-legend .cob-dot svg { width: 9px; height: 9px; }
     </style>
     <div class="slide-inner">
@@ -918,24 +921,25 @@
 
         <div class="cob-label"><span class="cob-ic"><i data-lucide="landmark"></i></span><strong>Ayudas y subvenciones de RR.&nbsp;HH.</strong></div>
         <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
         <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
         <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
 
         <div class="cob-label"><span class="cob-ic"><i data-lucide="calendar-clock"></i></span><strong>Bajas laborales</strong></div>
         <div class="cob-cell on"><span class="cob-dot"><i data-lucide="check"></i></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
-        <div class="cob-cell"><span class="cob-none"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
+        <div class="cob-cell"><span class="cob-soon"></span></div>
       </div>
 
       <div class="cob-legend">
-        <span><span class="cob-dot"><i data-lucide="check"></i></span> Servicio prestado por un equipo local</span>
-        <span><span class="cob-none"></span> Sin actividad en este país por el momento</span>
+        <span><span class="cob-dot"><i data-lucide="check"></i></span> Disponible</span>
+        <span><span class="cob-soon"></span> Bajo petición</span>
+        <span><span class="cob-none"></span> Todavía no</span>
       </div>
     </div>
     <div class="company-logo"><img src="https://ayming-france.github.io/assets/logos/ayming-logo.png" alt="Ayming"></div>
